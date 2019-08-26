@@ -1,0 +1,178 @@
+body {
+  /* background: linear-gradient(125deg, #e7e7e7 0%, #ffffff 81%, #dcc9ee 100%); */
+  background-image: url("https://b.stripecdn.com/site-srv/assets/img/blog/posts/connect-frontend/header-background-fca7c86a3378d48e2f3bf0ccda9e7fbfa2bebe96.png");
+  /* background: #ffffff url("img_tree.png") no-repeat center top; */
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#app {
+  font-family: "Life Savers", cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 0px;
+}
+
+h1,
+h2,
+h3,
+.strong {
+  font-weight: 800;
+}
+h4,
+h5,
+h6,
+.bold {
+  font-weight: 700;
+}
+.txt-animation {
+  background: linear-gradient(to right, #f3f3f3, #b738bb);
+  background-size: 300%;
+  animation: gradient 3s ease-in-out infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* position: relative; */
+  /* filter: drop-shadow(1px 1px 0px rgba(0, 0, 0, 0.95)); */
+}
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+.shadow {
+  font-size: 2.2em;
+  text-align: center;
+  letter-spacing: 0.01em;
+  /* filter: drop-shadow(1px 1px 0 rgba(0, 0, 0, 0.9)); */
+  text-shadow: 1px 1px 2px #2c3b8d;
+}
+.shadow:hover {
+  /* filter: drop-shadow(1px 1px 0 rgba(0, 0, 200, 0.8)); */
+  text-shadow: 1px 1px 1px #0c1547;
+  transform: translate(0, -1px);
+}
+.navbar nav {
+  padding: 0 20px;
+}
+.nav-gradient {
+  background: linear-gradient(125deg, #0e0088 0%, #8d22b8 51%, #631aa8 85%);
+}
+.home-title {
+  display: flex;
+  text-decoration: none;
+}
+.medium {
+  font-size: 2em !important;
+}
+.logo-line {
+  font-size: 3em !important;
+  line-height: 0.2em;
+}
+.index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  margin-top: 2em;
+}
+.col-margin {
+  margin: 3px 0;
+}
+.index h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0;
+}
+.ingredients {
+  margin: 30px auto;
+}
+.ingredients li {
+  display: inline-block;
+}
+.delete-button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 1.3em;
+}
+
+label,
+.chip {
+  color: #464646;
+  font-size: 1.1em;
+}
+label:hover,
+.chip:hover {
+  color: #3f3f3f !important;
+}
+.add-smoothie,
+.edit-smoothie {
+  margin-top: 60px;
+  padding: 2em;
+  max-width: 80vw;
+  min-width: 500px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(230, 230, 230, 0.7);
+}
+.field {
+  margin: 0.6em auto;
+  position: relative;
+}
+.delete {
+  position: absolute;
+  right: -1em;
+  bottom: 1em;
+  color: #aaa;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+.rotate {
+  transition: all 0.4s;
+  border-radius: 50%;
+}
+.rotate:hover {
+  transform: rotate(270deg);
+  background: rgba(72, 16, 100, 0.7);
+}
+.rotate:active {
+  transform: scale(1.5);
+  color: #2e2e2e;
+  background: #2c3b8d;
+  border-radius: 50%;
+}
+.indigo:hover {
+  box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.75),
+    0px 0px 3px rgba(0, 0, 0, 0.7);
+}
+.edit {
+  /* transition: all 0.4s; */
+  transform: rotate(0deg);
+}
+.edit:hover {
+  /* transform: rotate(270deg); */
+  animation: edit 0.4s ease-in-out infinite;
+}
+@keyframes edit {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
